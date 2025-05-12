@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Engine</title>
+  <style>
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #0f0f1a;
+  color: #e0e0ff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #1c1c2b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #f4630f;
+  text-shadow: 0 0 10px #f46200;
+}
+
+.content {
+  padding: 30px 60px;
+}
+
+.banner h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #00ffe1;
+  text-shadow: 0 0 5px #00ffe1;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+}
+
+.game-card {
+  background-color: #1d1d2f;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: transform 0.2s ease-in-out;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 15px rgba(217, 230, 247, 0.2);
+  text-align: center;
+
+}
+
+.game-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(0, 255, 225, 0.4);
+}
+
+.game-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.game-card h4 {
+  font-size: 20px;
+  margin: 15px 0 10px 0;
+  color: #ffffff;
+  text-align: center;
+
+}
+
+.install-btn {
+  background-color: #ff5722; /* Fire orange */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(255, 87, 34, 0.6);
+  transition: background-color 0.2s ease-in-out;
+  align-self: center; /* Center the button horizontally */
+}
+
+
+.install-btn:hover {
+  background-color: #e64a19;
+  text-align: center;
+
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <h1>XoXo Game Engine</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9cRQgroHaOqYwWzjmyvkFUrAwcw_GCirw0A&s" width="30" alt="Logo">
+  </div>
+
+  <div class="content">
+    <div class="banner">
+      <h2>Play Now</h2>
+      <div class="game-grid">
+        <div class="game-card">
+          <img src="https://deadshot.io/promo/thumbnail.png" alt="Deadshot">
+          <h4>Deadshot</h4>
+          <a href="https://deadshot.io/" class="install-btn">Play</a>
+        </div>
+
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvR90d8sPmmk6eFLC4YTwmlakcpduQqQ_juA&s" alt="SuperMario">
+          <h4>Krunker</h4>
+          <a href="https://krunker.io/?game=SIN:8lxxx" class="install-btn">Play</a>
+        </div>
+
+        <div class="game-card">
+          <img src="https://play-lh.googleusercontent.com/hEGOekqdaq5uDWbSZGQYz6fIpIcXYgF62QJC5UYZYoKwho28F7OQssjwpOb-pQxciumO=w526-h296-rw" alt="Road Rash">
+          <h4>Road Rash</h4>
+          <a href="https://gameforge.com/en-US/littlegames/moto-road-rash-3d/#" class="install-btn">Play</a>
+        </div>
+
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1HUI1LjHqKx-Mhj38oq7lQCIHl_aVfN5fbA&s" alt="Temple Run 2">
+          <h4>Temple Run 2</h4>
+          <a href="https://games.engineering.com/temple-run-2/index.html" class="install-btn">Play</a>
+        </div>
+
+        <div class="game-card">
+          <img src="https://play-lh.googleusercontent.com/xfH2BjcWES_xP8gquwD4JMRJROC7J-BvqBpTGEGwxPY2MeLa-fzGFMk05G59yC0dXYQ" alt="Tic-Tac-Toe">
+          <h4>Tic-Tac-Toe</h4>
+          <a href="https://playtictactoe.org/" class="install-btn">Play</a>
+        </div>
+
+
+        <!-- You can add more game-cards here to test scroll behavior -->
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="banner">
+      <h2>INSTALL NOW</h2>
+      <div class="game-grid">
+        <div class="game-card">
+          <img src="https://www.trustedreviews.com/wp-content/uploads/sites/7/2013/02/GTA-V-1.jpg" alt="GTA V">
+          <h4>GTA V</h4>
+          <a href="https://www.rockstargames.com/gta-v?info=order" class="install-btn">INSTALL</a>
+        </div>
+
+        <div class="game-card">
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1551360/capsule_616x353.jpg?t=1741106928" alt="ForzaHorizon5">
+          <h4>ForzaHorizon5</h4>
+          <a href="https://forza.net/horizon" class="install-btn">INSTALL</a>
+        </div>
+
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9nORwKdV8fft1PSx5NXIikbE5Q5VQkKihMA&s" alt="Valorant">
+          <h4>Valorant</h4>
+          <a href="https://playvalorant.com/en-us/download/" class="install-btn">INSTALL</a>
+        </div>
+
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR37ZpX19YISFEH3Uc40X--F4MVmBI-SPXCGQ&s" alt="RedDeadRedemption2">
+          <h4>RedDeadRedemption2</h4>
+          <a href="https://www.rockstargames.com/reddeadredemption2" class="install-btn">INSTALL</a>
+        </div>
+
+
+        <div class="game-card">
+          <img src="https://cdn.wccftech.com/wp-content/uploads/2025/04/Cyberpunk-2077-Ultimate-Edition.jpg" alt="CyberPunk">
+          <h4>CyberPunk 2077</h4>
+          <a href="https://www.cyberpunk.net/in/en/" class="install-btn">INSTALL</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
